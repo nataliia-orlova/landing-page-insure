@@ -72,3 +72,68 @@
         }
     }
 }
+
+.benefits {
+    margin-top: 280px;
+    margin-bottom: 120px;
+    .line {
+        margin-bottom: 32px;
+        border-top: solid $greyish-violet 1px;
+        width: 132px;
+    }
+    h2 {
+        font-family: 'DM Serif Display', serif;
+        color: $dark-violet;
+        font-size: 62px;
+        font-weight: 500;
+    }
+
+    &__row {
+        padding-top: 64px;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 2rem;
+
+        h3 {
+            font-family: 'DM Serif Display', serif;
+            color: $dark-violet;
+            padding-top: 24px;
+            padding-bottom: 18px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        p {
+            font-family: 'Karla', sans-serif;
+            color: $greyish-violet;
+        }
+    }
+}
+
+.about {
+    &__content {
+        height: 252px;
+        background-color: $primary-violet;
+        margin-bottom: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 64px;
+    }
+
+    h2 {
+        font-family: 'DM Serif Display', serif;
+        color: white;
+        font-size: 52px;
+        font-weight: 500;
+    }
+
+    img {
+        position: absolute;
+        right: 140px;
+    }
+
+    .cta-button--light {
+        z-index: 1;
+    }
+}

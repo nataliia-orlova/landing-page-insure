@@ -126,4 +126,61 @@ hr {
 .hero__copy p {
   font-family: "Karla", sans-serif;
   color: white;
+}
+
+.benefits {
+  margin-top: 280px;
+  margin-bottom: 120px;
+}
+.benefits .line {
+  margin-bottom: 32px;
+  border-top: solid hsl(273, 4%, 51%) 1px;
+  width: 132px;
+}
+.benefits h2 {
+  font-family: "DM Serif Display", serif;
+  color: hsl(270, 9%, 17%);
+  font-size: 62px;
+  font-weight: 500;
+}
+.benefits__row {
+  padding-top: 64px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+}
+.benefits__row h3 {
+  font-family: "DM Serif Display", serif;
+  color: hsl(270, 9%, 17%);
+  padding-top: 24px;
+  padding-bottom: 18px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.benefits__row p {
+  font-family: "Karla", sans-serif;
+  color: hsl(273, 4%, 51%);
+}
+
+.about__content {
+  height: 252px;
+  background-color: hsl(256, 26%, 20%);
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px;
+}
+.about h2 {
+  font-family: "DM Serif Display", serif;
+  color: white;
+  font-size: 52px;
+  font-weight: 500;
+}
+.about img {
+  position: absolute;
+  right: 140px;
+}
+.about .cta-button--light {
+  z-index: 1;
 }/*# sourceMappingURL=styles.css.map */
