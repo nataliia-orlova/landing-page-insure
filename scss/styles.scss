@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 32px;
     margin-bottom: 32px;
     &__menu {
         display: flex;
@@ -28,4 +28,47 @@
 
 .hero {
     background-color: $primary-violet;
+    display: flex;
+    height: 600px;
+
+    &__bg--right {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+
+    &__bg--left {
+        position: absolute;
+        left: 0;
+        top: 550px;
+        z-index: 1;
+    }
+
+    &__content {
+        display: flex;
+        position: relative;
+        top: 98px;
+    }
+
+    &__copy {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .line {
+            border-top: solid white 1px;
+            width: 132px;
+        }
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            color: white;
+            font-size: 62px;
+            font-weight: 500;
+        }
+
+        p {
+            font-family: 'Karla', sans-serif;
+            color: white;
+        }
+    }
 }

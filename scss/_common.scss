@@ -28,4 +28,18 @@ $light-grey: hsl(0, 0%, 98%);
     cursor: pointer;
     &:hover {
     }
+
+    &--light {
+        color: white;
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        background-color: transparent;
+        width: 142px;
+        height: 40px;
+        border: 1px solid white;
+        cursor: pointer;
+        &:hover {
+        }
+    }
 }
