@@ -1,0 +1,31 @@
+@import './reset';
+@import './common';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    &__menu {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+        align-items: center;
+    }
+    &__menu-item {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+
+        li {
+            color: $greyish-violet;
+            font-family: 'Karla', sans-serif;
+            font-weight: 700;
+        }
+    }
+}
+
+.hero {
+    background-color: $primary-violet;
+}

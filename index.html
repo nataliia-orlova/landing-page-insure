@@ -4,7 +4,56 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="scss/styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <title>Insure</title>
     </head>
-    <body></body>
+    <body>
+        <header class="header container">
+            <a href="index.html" alt="Insure Logo">
+                <img src="assets/svg/logo.svg" />
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu-item">
+                    <li>HOW WE WORK</li>
+                    <li>BLOG</li>
+                    <li>ACCOUNT</li>
+                </ul>
+                <button class="cta-button">VIEW PLANS</button>
+            </nav>
+        </header>
+        <main>
+            <section class="hero container">
+                <div class="hero__content">
+                    <h1>Humanizing your insurance.</h1>
+                    <p>
+                        Get your life insurance coverage easier and faster. We
+                        blend our expertise and technology to help you find the
+                        plan that’s right for you. Ensure you and your loved
+                        ones are protected.
+                    </p>
+                    <button class="cta-button">VIEW PLANS</button>
+                </div>
+                <div class="hero__img">
+                    <picture>
+                        <source
+                            srcset="./assets/images/image-intro-mobile.jpg"
+                            media="(max-width: 992px)"
+                        />
+                        <img
+                            src="./assets/images/image-intro-desktop.jpg"
+                            alt="happy family"
+                        />
+                    </picture>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
 </html>

@@ -1,1 +1,81 @@
-/*# sourceMappingURL=styles.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+blockquote,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* COLORS */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 138px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.cta-button {
+  color: hsl(256, 26%, 20%);
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: transparent;
+  width: 142px;
+  height: 40px;
+  border: 1px solid hsl(256, 26%, 20%);
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-items: center;
+}
+.header__menu-item {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.header__menu-item li {
+  color: hsl(273, 4%, 51%);
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+.hero {
+  background-color: hsl(256, 26%, 20%);
+}/*# sourceMappingURL=styles.css.map */
