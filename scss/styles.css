@@ -52,6 +52,10 @@ hr {
   border: 1px solid hsl(256, 26%, 20%);
   cursor: pointer;
 }
+.cta-button:hover {
+  color: white;
+  background-color: hsl(256, 26%, 20%);
+}
 .cta-button--light {
   color: white;
   font-family: "Karla", sans-serif;
@@ -63,6 +67,11 @@ hr {
   border: 1px solid white;
   cursor: pointer;
 }
+.cta-button--light:hover {
+  color: hsl(256, 26%, 20%);
+  background-color: white;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -85,6 +94,9 @@ hr {
   color: hsl(273, 4%, 51%);
   font-family: "Karla", sans-serif;
   font-weight: 700;
+}
+.header__menu-item a:hover {
+  color: hsl(256, 26%, 20%);
 }
 
 .hero {
@@ -193,6 +205,10 @@ hr {
   padding-bottom: 120px;
   position: relative;
 }
+.footer > div {
+  position: relative;
+  z-index: 1;
+}
 .footer__logo-section, .footer__menu {
   display: flex;
   justify-content: space-between;
@@ -210,11 +226,14 @@ hr {
   font-size: 16px;
   margin-bottom: 24px;
 }
-.footer a {
+.footer li a {
   color: hsl(256, 26%, 20%);
   font-family: "Karla", sans-serif;
   font-weight: 700;
   font-size: 16px;
+}
+.footer li a:hover {
+  text-decoration: underline;
 }
 .footer li {
   margin-bottom: 12px;
@@ -225,5 +244,5 @@ hr {
 .footer__bg {
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 0;
 }/*# sourceMappingURL=styles.css.map */

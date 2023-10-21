@@ -15,19 +15,7 @@
         <title>Insure</title>
     </head>
     <body>
-        <header class="header container">
-            <a href="index.html" alt="Insure Logo">
-                <img src="assets/svg/logo.svg" />
-            </a>
-            <nav class="header__menu">
-                <ul class="header__menu-item">
-                    <li><a href="#"> HOW WE WORK</a></li>
-                    <li><a href="#"> BLOG</a></li>
-                    <li><a href="#"> ACCOUNT</a></li>
-                </ul>
-                <button class="cta-button">CONTACT US</button>
-            </nav>
-        </header>
+        <website-header></website-header>
         <main>
             <section class="hero container">
                 <img
@@ -47,7 +35,11 @@
                             find the plan that’s right for you. Ensure you and
                             your loved ones are protected.
                         </p>
-                        <button class="cta-button--light">CONTACT US</button>
+                        <a href="contact.html">
+                            <button class="cta-button--light">
+                                CONTACT US
+                            </button></a
+                        >
                     </div>
                     <div class="hero__img">
                         <picture>
@@ -165,7 +157,7 @@
                     <ul class="footer__menu-item">
                         <li><a href="#"> SUPPORT</a></li>
                         <li><a href="#"> LIVE CHAT</a></li>
-                        <li><a href="#"> CONTACT</a></li>
+                        <li><a href="contact.html"> CONTACT</a></li>
                     </ul>
                 </div>
                 <div class="footer__menu--other">
@@ -182,5 +174,6 @@
                 alt=""
             />
         </footer>
+        <script src="headerFooter.js"></script>
     </body>
 </html>

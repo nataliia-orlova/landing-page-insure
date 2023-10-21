@@ -27,6 +27,8 @@ $light-grey: hsl(0, 0%, 98%);
     border: 1px solid $primary-violet;
     cursor: pointer;
     &:hover {
+        color: white;
+        background-color: $primary-violet;
     }
 
     &--light {
@@ -40,6 +42,8 @@ $light-grey: hsl(0, 0%, 98%);
         border: 1px solid white;
         cursor: pointer;
         &:hover {
+            color: $primary-violet;
+            background-color: white;
         }
     }
 }
