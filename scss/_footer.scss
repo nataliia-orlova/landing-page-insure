@@ -1,0 +1,54 @@
+.footer {
+    background-color: $light-grey;
+    padding-top: 54px;
+    padding-bottom: 120px;
+    position: relative;
+
+    & > div {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__logo-section,
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__line {
+        margin-bottom: 32px;
+        border-top: solid $greyish-violet 1px;
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    h6 {
+        color: $greyish-violet;
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    li a {
+        color: $primary-violet;
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    li {
+        margin-bottom: 12px;
+    }
+
+    img {
+        margin-left: 15px;
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

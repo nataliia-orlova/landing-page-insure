@@ -1,0 +1,66 @@
+.form {
+    &__content {
+        height: 80vh;
+        background-color: $primary-violet;
+        margin-bottom: 120px;
+        display: flex;
+
+        align-items: center;
+
+        position: relative;
+    }
+
+    h2 {
+        font-family: 'DM Serif Display', serif;
+        color: white;
+        font-size: 46px;
+        font-weight: 500;
+        flex-basis: 40%;
+        padding-left: 100px;
+        z-index: 1;
+        flex-basis: 55%;
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 120px;
+    }
+
+    &__wrapper {
+        flex-basis: 40%;
+        padding: 60px;
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-family: 'Karla', sans-serif;
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 14px;
+        letter-spacing: 0em;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input {
+        margin-bottom: 40px;
+        line-height: 32px;
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    textarea {
+        margin-bottom: 40px;
+        font-family: 'Karla', sans-serif;
+        color: $dark-violet;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
