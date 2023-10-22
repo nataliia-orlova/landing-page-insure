@@ -119,6 +119,11 @@ hr {
   height: 620px;
   background-color: hsl(256, 26%, 20%);
 }
+@media (min-width: 992px) {
+  .header .overlay {
+    display: none;
+  }
+}
 .header .overlay.open {
   visibility: visible;
 }
@@ -487,6 +492,7 @@ hr {
   gap: 18px;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .form__content {
