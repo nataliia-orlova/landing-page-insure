@@ -1,7 +1,7 @@
 class WebsiteHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<header class="header container">
-        <a href="index.html" alt="Insure Logo">
+        <a href="index.html"  alt="Insure Logo">
             <img src="assets/svg/logo.svg" />
         </a>
         <nav class="header__menu">
@@ -14,6 +14,26 @@ class WebsiteHeader extends HTMLElement {
                 ><button class="cta-button">CONTACT US</button></a
             >
         </nav>
+        <div class="hamburger" data-btn-open>
+        
+        <img  src="./assets/icons/icon-hamburger.svg" />
+        </div>
+
+        <div class="overlay container">
+        <div class="close" data-btn-close>
+        <img  src="./assets/icons/icon-close.svg" />
+        </div>
+        <nav class="header__menu--responsive">
+            <ul class="header__menu-item--responsive">
+                <li><a href="#"> HOW WE WORK</a></li>
+                <li><a href="#"> BLOG</a></li>
+                <li><a href="#"> ACCOUNT</a></li>
+            </ul>
+            <a href="contact.html"
+                ><button class="cta-button--responsive">CONTACT US</button></a
+            >
+        </nav>
+        </div>
     </header>`;
     }
 }

@@ -34,10 +34,20 @@ hr {
   margin: 0 auto;
   padding: 0 138px;
 }
+@media (max-width: 1200px) {
+  .container {
+    padding: 12px 92px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 24px 68px;
+  }
+}
 @media (max-width: 768px) {
   .container {
     padding-left: 24px;
-    padding-right: 24px;
+    padding-right: 48px;
   }
 }
 
@@ -56,7 +66,7 @@ hr {
   color: white;
   background-color: hsl(256, 26%, 20%);
 }
-.cta-button--light {
+.cta-button--light, .cta-button--responsive {
   color: white;
   font-family: "Karla", sans-serif;
   font-weight: 700;
@@ -67,7 +77,7 @@ hr {
   border: 1px solid white;
   cursor: pointer;
 }
-.cta-button--light:hover {
+.cta-button--light:hover, .cta-button--responsive:hover {
   color: hsl(256, 26%, 20%);
   background-color: white;
 }
@@ -79,16 +89,74 @@ hr {
   margin-top: 32px;
   margin-bottom: 32px;
 }
+.header .hamburger {
+  display: none;
+}
+@media (max-width: 992px) {
+  .header .hamburger {
+    display: flex;
+  }
+}
+.header .hamburger.notvisible {
+  display: none;
+}
+.header .close {
+  display: none;
+}
+.header .close.visible {
+  display: inline-block;
+}
+.header .overlay {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  top: 112px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 2;
+  height: 620px;
+  background-color: hsl(256, 26%, 20%);
+}
+.header .overlay.open {
+  visibility: visible;
+}
 .header__menu {
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .header__menu {
+    display: none;
+  }
+}
+.header__menu--responsive {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
 .header__menu-item {
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
+}
+.header__menu-item--responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.header__menu-item--responsive a {
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+.header__menu-item--responsive a:hover {
+  color: white;
 }
 .header__menu-item a {
   color: hsl(273, 4%, 51%);
@@ -112,6 +180,25 @@ hr {
 .footer__logo-section, .footer__menu {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .footer__logo-section, .footer__menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .footer__logo-section {
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
 }
 .footer__line {
   margin-bottom: 32px;
@@ -153,10 +240,41 @@ hr {
   height: 600px;
   position: relative;
 }
+@media (max-width: 576px) {
+  .hero__img {
+    width: 50vw;
+    position: absolute;
+    top: 250px;
+    right: 0;
+  }
+}
+.hero picture img {
+  width: 100%;
+}
 .hero__bg--right {
   position: absolute;
   right: 0px;
   z-index: 1;
+}
+@media (max-width: 1200px) {
+  .hero__bg--right {
+    scale: 0.8;
+    right: -42px;
+    top: -58px;
+  }
+}
+@media (max-width: 992px) {
+  .hero__bg--right {
+    scale: 0.8;
+    top: -58px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__bg--right {
+    scale: 0.4;
+    top: -178px;
+    right: -128px;
+  }
 }
 .hero__bg--left {
   position: absolute;
@@ -164,15 +282,39 @@ hr {
   top: 420px;
   z-index: 1;
 }
+@media (max-width: 992px) {
+  .hero__bg--left {
+    scale: 0.8;
+    left: -24px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__bg--left {
+    scale: 0.5;
+    left: -52px;
+  }
+}
 .hero__content {
   display: flex;
   position: relative;
   top: 98px;
+  gap: 48px;
+}
+@media (max-width: 992px) {
+  .hero__content {
+    top: 68px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__content {
+    flex-direction: column;
+  }
 }
 .hero__copy {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  flex-basis: 40%;
 }
 .hero__copy .line {
   border-top: solid white 1px;
@@ -183,15 +325,37 @@ hr {
   color: white;
   font-size: 62px;
   font-weight: 500;
+  line-height: 62px;
+}
+@media (max-width: 992px) {
+  .hero__copy h1 {
+    font-size: 58px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__copy h1 {
+    font-size: 43px;
+    line-height: 48px;
+  }
 }
 .hero__copy p {
   font-family: "Karla", sans-serif;
   color: white;
 }
+@media (max-width: 992px) {
+  .hero__copy p {
+    font-size: 12px;
+  }
+}
 
 .benefits {
   margin-top: 280px;
   margin-bottom: 120px;
+}
+@media (max-width: 992px) {
+  .benefits {
+    margin-top: 120px;
+  }
 }
 .benefits .line {
   margin-bottom: 32px;
@@ -204,11 +368,40 @@ hr {
   font-size: 62px;
   font-weight: 500;
 }
+@media (max-width: 992px) {
+  .benefits h2 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 768px) {
+  .benefits h2 {
+    font-size: 43px;
+  }
+}
+@media (max-width: 576px) {
+  .benefits h2 {
+    text-align: center;
+  }
+}
 .benefits__row {
   padding-top: 64px;
   display: grid;
   grid-auto-flow: column;
   gap: 2rem;
+}
+@media (max-width: 576px) {
+  .benefits__row {
+    grid-auto-flow: row;
+    width: 280px;
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  .benefits__row img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .benefits__row h3 {
   font-family: "DM Serif Display", serif;
@@ -218,9 +411,29 @@ hr {
   font-size: 24px;
   font-weight: 500;
 }
+@media (max-width: 992px) {
+  .benefits__row h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .benefits__row h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .benefits__row h3 {
+    text-align: center;
+  }
+}
 .benefits__row p {
   font-family: "Karla", sans-serif;
   color: hsl(273, 4%, 51%);
+}
+@media (max-width: 576px) {
+  .benefits__row p {
+    text-align: center;
+  }
 }
 
 .about__content {
@@ -232,16 +445,35 @@ hr {
   justify-content: space-between;
   padding: 64px;
   position: relative;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .about__content {
+    flex-direction: column;
+    height: 420px;
+  }
 }
 .about h2 {
   font-family: "DM Serif Display", serif;
   color: white;
   font-size: 52px;
   font-weight: 500;
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .about h2 {
+    font-size: 44px;
+  }
 }
 .about img {
   position: absolute;
   right: 0px;
+}
+@media (max-width: 768px) {
+  .about img {
+    right: -50px;
+    scale: 2;
+  }
 }
 .about .cta-button--light {
   z-index: 1;
