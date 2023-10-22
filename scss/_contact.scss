@@ -1,13 +1,15 @@
 .form {
     &__content {
-        height: 80vh;
+        height: 80%;
         background-color: $primary-violet;
         margin-bottom: 120px;
         display: flex;
-
+        gap: 18px;
         align-items: center;
-
         position: relative;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     h2 {
@@ -15,10 +17,17 @@
         color: white;
         font-size: 46px;
         font-weight: 500;
-        flex-basis: 40%;
         padding-left: 100px;
         z-index: 1;
-        flex-basis: 55%;
+
+        @media (max-width: 992px) {
+            font-size: 36px;
+            text-align: center;
+            padding: 68px 42px 0 42px;
+        }
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
     }
 
     img {
@@ -30,6 +39,9 @@
     &__wrapper {
         flex-basis: 40%;
         padding: 60px;
+        @media (max-width: 992px) {
+            padding-top: 10px;
+        }
     }
 
     &__inputs {
@@ -46,6 +58,7 @@
         letter-spacing: 0em;
         display: block;
         margin-bottom: 10px;
+        z-index: 1;
     }
 
     input {
@@ -54,6 +67,7 @@
         font-family: 'Karla', sans-serif;
         font-size: 16px;
         font-weight: 300;
+        z-index: 1;
     }
 
     textarea {
@@ -62,5 +76,6 @@
         color: $dark-violet;
         font-size: 16px;
         font-weight: 300;
+        z-index: 1;
     }
 }
