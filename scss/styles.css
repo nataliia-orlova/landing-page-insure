@@ -108,15 +108,15 @@ hr {
 }
 .header .overlay {
   visibility: hidden;
-  position: fixed;
-  width: 100%;
+  position: absolute;
+  width: 50%;
   top: 112px;
   bottom: 0;
   left: 0;
   right: 0;
   overflow: hidden;
   z-index: 2;
-  height: 620px;
+  height: 420px;
   background-color: hsl(256, 26%, 20%);
 }
 @media (min-width: 992px) {
@@ -253,6 +253,15 @@ hr {
     right: 0;
   }
 }
+@media (max-width: 480px) {
+  .hero__img {
+    position: static;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .hero picture img {
   width: 100%;
 }
@@ -362,6 +371,11 @@ hr {
     margin-top: 120px;
   }
 }
+@media (max-width: 480px) {
+  .benefits {
+    margin-top: 280px;
+  }
+}
 .benefits .line {
   margin-bottom: 32px;
   border-top: solid hsl(273, 4%, 51%) 1px;
@@ -401,12 +415,10 @@ hr {
     margin: auto;
   }
 }
-@media (max-width: 576px) {
-  .benefits__row img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.benefits__row img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .benefits__row h3 {
   font-family: "DM Serif Display", serif;
@@ -415,6 +427,7 @@ hr {
   padding-bottom: 18px;
   font-size: 24px;
   font-weight: 500;
+  text-align: center;
 }
 @media (max-width: 992px) {
   .benefits__row h3 {
@@ -424,11 +437,6 @@ hr {
 @media (max-width: 768px) {
   .benefits__row h3 {
     font-size: 16px;
-  }
-}
-@media (max-width: 576px) {
-  .benefits__row h3 {
-    text-align: center;
   }
 }
 .benefits__row p {

@@ -20,9 +20,11 @@ class WebsiteHeader extends HTMLElement {
         </div>
 
         <div class="overlay container">
+        
         <div class="close" data-btn-close>
         <img  src="./assets/icons/icon-close.svg" />
         </div>
+        
         <nav class="header__menu--responsive">
             <ul class="header__menu-item--responsive">
                 <li><a href="#"> HOW WE WORK</a></li>

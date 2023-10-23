@@ -23,16 +23,15 @@
     }
     .overlay {
         visibility: hidden;
-        position: fixed;
-        width: 100%;
+        position: absolute;
+        width: 50%;
         top: 112px;
         bottom: 0;
         left: 0;
         right: 0;
         overflow: hidden;
         z-index: 2;
-
-        height: 620px;
+        height: 420px;
         background-color: $primary-violet;
         @media (min-width: 992px) {
             display: none;
